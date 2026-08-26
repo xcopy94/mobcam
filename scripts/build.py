@@ -123,7 +123,7 @@ VIRTUALCAM = Product(
     directory="virtualcam",
 )
 DATA_DIR = OBS_PLUGIN.root / "data"
-OBS_STUDIO_VERSION = "32.2.2"
+OBS_STUDIO_VERSION = "32.0.0"
 OBS_STUDIO_URL = "https://github.com/obsproject/obs-studio/archive/refs/tags"
 PREBUILT_VERSION = "2026-07-15"
 PREBUILT_URL = "https://github.com/obsproject/obs-deps/releases/download"
@@ -136,11 +136,11 @@ DEPENDENCIES: list[Dependency] = [
         os={
             "macos": DependencySource(
                 url=f"{OBS_STUDIO_URL}/{OBS_STUDIO_VERSION}.tar.gz",
-                sha256="35d3cd0979d65664fada7119fdb612eca7c34b61a1623a330caec74bf72626c4",
+                sha256="6c73099d53aee7b57faa624431891901d9c84b2d93e284d27799fdc33868d113",
             ),
             "windows": DependencySource(
                 url=f"{OBS_STUDIO_URL}/{OBS_STUDIO_VERSION}.zip",
-                sha256="f15f001f1fa526405318835f44f9910046502f496ebc3a30d5296a5018b831aa",
+                sha256="8b91b13f966d018ef2de20d74b85857374bac263f30e13ec1e9acb0212413b94",
             ),
         },
     ),
